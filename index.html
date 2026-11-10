@@ -12,17 +12,9 @@
             line-height: 1.6;
             color: #333;
         }
-        h1 {
-            margin-bottom: 8px;
-        }
-        .subtitle {
-            color: #555;
-            margin-bottom: 25px;
-        }
-        .links {
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
+        h1 { margin-bottom: 8px; }
+        .subtitle { color: #555; margin-bottom: 25px; }
+        .links { margin-top: 30px; margin-bottom: 40px; }
         .links a {
             display: inline-block;
             margin-right: 25px;
@@ -31,41 +23,35 @@
             text-decoration: none;
             font-weight: 500;
         }
-        .links a:hover {
-            text-decoration: underline;
-        }
+        .links a:hover { text-decoration: underline; }
         .contact {
             border-top: 1px solid #ddd;
             padding-top: 25px;
             margin-top: 10px;
         }
-        .contact h2 {
-            font-size: 1.3em;
-            margin-bottom: 12px;
-        }
+        .contact h2 { font-size: 1.3em; margin-bottom: 12px; }
     </style>
 </head>
 <body>
     <h1>Fish Behavior Classification</h1>
-    <p class="subtitle">Real-Time Classification of Fish Feeding Intensity Using MobileViT and Temporal Models</p>
+    <p class="subtitle">Online Hunger-Level Recognition of Tilapia from Underwater Video with a MobileViT-Small–BiLSTM Model</p>
 
     <p>
-        This project presents a modular pipeline for classifying fish feeding behavior (Strong, Medium, Weak, None) 
-        in aquaculture environments. It combines a MobileViT backbone with temporal modules (BiLSTM or Transformer) 
-        to process video sequences and estimate feeding intensity efficiently.
+        Fish Behavior Classification recognizes tilapia hunger level from underwater video in real time, so feed can follow the actual hunger level. A single frame is not enough, because hunger is expressed by how the fish behave over a short time window. MobileViT-Small extracts the spatial appearance and a bidirectional LSTM models the temporal order. The network runs online on an NVIDIA Jetson and reaches accuracy close to models with about three times as many parameters. Recordings were collected with two side-view cameras: Tilapia-ZED (2.3 MP, 19 days) and Tilapia-FD (4 MP, 8 days).
     </p>
 
     <div class="links">
         <strong>Resources:</strong><br><br>
-        <a href="https://github.com/sanazkeshvari/fish-behavior-classification" target="_blank">Code (GitHub)</a>
+        <a href="https://github.com/IFA-Research/FishBehavior" target="_blank">Code (GitHub)</a>
     </div>
 
     <div class="contact">
         <h2>Contact</h2>
         <p>
-            <strong>Sanaz Keshvari</strong><br>
+            <strong>Said Al-Abri</strong><br>
+            Assistant Professor<br>
             Sultan Qaboos University, Oman<br>
-            Email: <a href="mailto:s.keshvari@squ.edu.om">s.keshvari@squ.edu.om</a>
+            Email: <a href="mailto:ssabry@squ.edu.om">ssabry@squ.edu.om</a>
         </p>
     </div>
 </body>
