@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+runs/
+Dataset/
+results/
+.DS_Store

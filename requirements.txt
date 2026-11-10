@@ -1,0 +1,9 @@
+torch
+transformers
+pillow
+numpy
+pandas
+scikit-learn
+torchmetrics
+tqdm
+openpyxl
